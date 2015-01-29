@@ -7,6 +7,9 @@ function injectScript(filename) {
   var scriptEl = document.createElement('script');
   scriptEl.setAttribute('type','text/javascript');
   scriptEl.setAttribute('src', filename);
+
+  var scriptFilesEl = document.getElementById('script-files');
+  scriptFilesEl.appendChild(scriptEl);
 }
 
 function addToListOfScripts(filename) {
@@ -20,6 +23,6 @@ function addToListOfScripts(filename) {
 
 function loadScript() {
   var filename = getSelectedValue();
-  injectScript('/' + filename);
+  injectScript(filename);
   addToListOfScripts(filename);
 }
