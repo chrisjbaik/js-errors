@@ -4,14 +4,16 @@
   <body>
     <select id="select-script">
       <option value="block-scope.js">block-scope.js</option>
+      <option value="hoisting.js">hoisting.js</option>
       <option value="scope.js">scope.js</option>
       <option value="this.js">this.js</option>
       <option value="this-2.js">this-2.js</option>
     </select>
     <button onclick="loadScript()">Load</button>
-    <div>
-      <h2>Loaded Scripts</h2>
-      <ul id="list-of-scripts"></ul>
+    <h2>Loaded Scripts</h2>
+    <ul id="list-of-scripts"></ul>
+    <h2>Sandbox</h2>
+    <div id="sandbox">
     </div>
     <div id="script-files">
       <script src="index.js"></script>
